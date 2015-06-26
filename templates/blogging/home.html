@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>{{profile_name}}</h1>
+{% if blogs %}
+<ul>
+                {% for page in blogs %}
+               <li>{{page.text}}</li>
+                {% endfor %}
+            </ul>
+{% endif %}
+
+</body>
+</html>
